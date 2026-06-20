@@ -8,8 +8,7 @@
  "serviceType": "FTTN", "plan": "NBN 100" },
  { "customerId": "CUS-004-WA", "address": "33 Fremantle Drive, Bibra Lake WA 6163",
  "serviceType": "FTTC", "plan": "NBN 50" },
- { "customerId": "CUS-005-SA", "address": "19 Morphett Vale Road, Morphett Vale SA
-5162",
+ { "customerId": "CUS-005-SA", "address": "19 Morphett Vale Road, Morphett Vale SA 5162",
  "serviceType": "Fixed Wireless", "plan": "NBN 50" },
  { "customerId": "CUS-006-TAS", "address": "7 Sullivan's Cove, Hobart TAS 7000",
  "serviceType": "FTTB", "plan": "NBN 100" },
