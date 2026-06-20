@@ -110,7 +110,7 @@ npm run test:watch    # Watch mode
 npm run test:coverage # With coverage report
 ```
 
-On day one, you should see **2 test suites, 13 tests, all passing**.
+On day one, you should see **2 test suites, 16 tests, all passing**.
 
 ---
 
