@@ -56,7 +56,7 @@ workflow. You watch, then reproduce it yourself in the afternoon breakout.
 }
 ```
 
-### Session 2 — Module 1C GitHub Arc: `GET /fault-status/:fault_id`
+### Session 2 — Module 1C GitHub Arc: `PATCH /fault-status/:fault_id`
 Built using the full GitHub workflow. The BA writes a GitHub Issue with
 acceptance criteria → Claude Code creates a branch, builds the endpoint,
 opens a PR → Claude reviews the PR → a human approves the merge.
