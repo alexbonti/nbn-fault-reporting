@@ -1,1 +1,40 @@
-$(cat /home/claude/nbn-fault-reporting/data/mockData.json)
+{
+ "customers": [
+ { "customerId": "CUS-001-NSW", "address": "14 Banksia Grove, Cherrybrook NSW 2126",
+ "serviceType": "FTTP", "plan": "NBN 1000" },
+ { "customerId": "CUS-002-VIC", "address": "82 St Kilda Road, Melbourne VIC 3004",
+ "serviceType": "HFC", "plan": "NBN 250" },
+ { "customerId": "CUS-003-QLD", "address": "5 Coral Crescent, Surfers Paradise QLD 4217",
+ "serviceType": "FTTN", "plan": "NBN 100" },
+ { "customerId": "CUS-004-WA", "address": "33 Fremantle Drive, Bibra Lake WA 6163",
+ "serviceType": "FTTC", "plan": "NBN 50" },
+ { "customerId": "CUS-005-SA", "address": "19 Morphett Vale Road, Morphett Vale SA
+5162",
+ "serviceType": "Fixed Wireless", "plan": "NBN 50" },
+ { "customerId": "CUS-006-TAS", "address": "7 Sullivan's Cove, Hobart TAS 7000",
+ "serviceType": "FTTB", "plan": "NBN 100" },
+ { "customerId": "CUS-007-NT", "address": "44 The Esplanade, Darwin NT 0800",
+ "serviceType": "Satellite", "plan": "SkyMuster Plus" },
+ { "customerId": "CUS-008-ACT", "address": "12 Gungahlin Drive, Gungahlin ACT 2912",
+ "serviceType": "FTTP", "plan": "NBN 500" }
+ ],
+ "faultTypes": [
+ { "code": "NO_CONNECTION", "priority": "HIGH", "targetResolutionHours": 24 },
+ { "code": "SLOW_SPEED", "priority": "MEDIUM", "targetResolutionHours": 72 },
+ { "code": "INTERMITTENT", "priority": "MEDIUM", "targetResolutionHours": 72 },
+ { "code": "PHONE_LINE", "priority": "HIGH", "targetResolutionHours": 24 },
+ { "code": "EQUIPMENT_FAULT","priority": "MEDIUM", "targetResolutionHours": 48 },
+ { "code": "PLANNED_OUTAGE", "priority": "LOW", "targetResolutionHours": 168 }
+ ],
+ "faultStatuses": [
+ { "code": "SUBMITTED" }, { "code": "IN_PROGRESS" }, { "code": "PENDING_CUSTOMER"
+},
+ { "code": "ESCALATED" }, { "code": "RESOLVED" }
+ ],
+ "sampleDescriptions": [
+ "No internet since 6am. Power light is red on the connection box.",
+ "Speeds dropping to under 5 Mbps. Started 3 days ago.",
+ "Connection drops every 20-30 minutes, comes back after 2-3 minutes.",
+ "VoIP phone showing No Service. NBN light is green but phone will not register."
+ ]
+}
