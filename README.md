@@ -131,7 +131,7 @@ Realistic Australian customer data is in `data/mockData.json`:
 Build a working prototype of the fault reporting tool. Your team's output must include:
 
 1. `POST /report-fault` endpoint — implemented, validated, tested
-2. `GET /fault-status/:fault_id` endpoint — implemented, validated, tested
+2. `PATCH /fault-status/:fault_id` endpoint — implemented, validated, tested
 3. One GitHub Issue per feature (written by the BA)
 4. One PR per feature (created by Claude Code)
 5. One subagent PR review per feature before the human merge
