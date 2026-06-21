@@ -215,3 +215,20 @@ also to be built as part of this extension).
 
 After both demos, POST, PATCH and the dashboard exist.
 Day 2 teams start from this completed state.
+
+### Module 2A Part 1 — GET /fault-status/:fault_id
+Built by engineers themselves during the Chapter 4 hands-on breakout (warm-up task).
+Allows a call centre agent to retrieve a specific fault report by its ID.
+
+The scenario: a customer calls back with their fault ID asking for a status update.
+The agent needs to pull up that specific report instantly — without fetching all reports.
+
+Requirements:
+- Validate `fault_id` format using `faultId.isValid()`
+- Return 400 with `INVALID_FAULT_ID` if the format is wrong
+- Return 404 with `NOT_FOUND` if no report matches
+- Return 200 with the full fault report object on success
+
+Uses `store.findById()` — no new store methods needed.
+
+After this, `GET /fault-status/:fault_id` exists in the codebase.

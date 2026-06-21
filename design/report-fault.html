@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Report a fault — NBN Co</title>
+  <link rel="stylesheet" href="/design-system/tokens.css">
+  <link rel="stylesheet" href="/design-system/components.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a class="nav__logo" href="/">
+        <span class="nav__logo-mark"><span>nbn</span></span>
+        <span class="nav__logo-text">
+          <strong>NBN Co</strong>
+          Fault Reporting
+        </span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="/report-fault" class="active">Report a Fault</a></li>
+        <li><a href="/status">Check Status</a></li>
+        <li><a href="/help">Help</a></li>
+      </ul>
+      <div class="nav__cta">
+        <a class="btn btn--secondary btn--sm" href="/status">Check Status</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Form -->
+  <main class="section">
+    <div class="container container--narrow">
+
+      <ul class="breadcrumb">
+        <li><a href="/">Home</a></li>
+        <li><a href="/report-fault">Report a fault</a></li>
+      </ul>
+
+      <p class="label">New fault report</p>
+      <h1 class="heading-2">Report a fault</h1>
+      <p class="text-lg text-muted">
+        Tell us what's happening with your connection. Most faults are diagnosed within the hour, and we'll text you status updates.
+      </p>
+
+      <div class="card">
+        <div class="card__body">
+          <form action="/report-fault" method="POST">
+
+            <div class="form-group">
+              <label class="form-label" for="customerId">Customer ID</label>
+              <input class="form-input" id="customerId" name="customerId" type="text" placeholder="CUS-001-NSW" required>
+              <span class="form-hint">Format: CUS-001-NSW</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="faultType">Fault type</label>
+              <select class="form-select" id="faultType" name="faultType" required>
+                <option value="" disabled selected>Select a fault type…</option>
+                <option value="NO_CONNECTION">No connection</option>
+                <option value="SLOW_SPEED">Slow speed</option>
+                <option value="INTERMITTENT">Intermittent dropouts</option>
+                <option value="PHONE_LINE">Phone line</option>
+                <option value="EQUIPMENT_FAULT">Equipment fault</option>
+                <option value="PLANNED_OUTAGE">Planned outage</option>
+              </select>
+              <!-- Error state: add class "form-select--error" to the <select> above and show this span -->
+              <!-- <span class="form-error">Please select a fault type.</span> -->
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="address">Service address</label>
+              <input class="form-input" id="address" name="address" type="text" placeholder="12 Example St, Suburb NSW 2000">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="description">Description</label>
+              <textarea class="form-textarea" id="description" name="description" rows="5" placeholder="Describe what's happening with your connection…"></textarea>
+              <span class="form-hint">Include when it started and anything you've already tried.</span>
+            </div>
+
+            <hr class="divider">
+
+            <div class="nav__cta">
+              <a class="btn btn--ghost" href="/">Cancel</a>
+              <button class="btn btn--primary" type="submit">Submit Fault Report</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__brand-name">NBN Co</p>
+          <p class="footer__brand-desc">Fault Reporting for residential customers on the nbn® network. Track every step from submission to resolution.</p>
+        </div>
+        <div>
+          <p class="footer__heading">Support</p>
+          <ul class="footer__links">
+            <li><a href="/report-fault">Report a fault</a></li>
+            <li><a href="/status">Check status</a></li>
+            <li><a href="/help">Help centre</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__heading">Contact</p>
+          <ul class="footer__links">
+            <li><a href="tel:1800626326">1800 NBN CO</a></li>
+            <li><a href="/contact">Contact us</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__heading">Legal</p>
+          <ul class="footer__links">
+            <li><a href="/privacy">Privacy</a></li>
+            <li><a href="/terms">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 NBN Co Ltd. All rights reserved.</p>
+        <p class="footer__copy">nbn® is a registered trade mark of NBN Co Ltd.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

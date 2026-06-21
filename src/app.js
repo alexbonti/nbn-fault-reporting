@@ -17,10 +17,10 @@ app.get('/health', (req, res) => {
   });
 });
 
-// ── Routes will be added here during the workshop ─────────────────
-// Participants will use Claude Code to implement:
-//   POST /report-fault
-//   GET  /fault-status/:fault_id
+// ── Routes added during the workshop ──────────────────────────────
+//   POST  /report-fault              (Module 1B  — facilitator demo)
+//   PATCH /fault-status/:fault_id    (Module 1C  — GitHub arc, facilitator)
+//   GET   /fault-status/:fault_id    (Module 2A  — engineers, Part 1)
 
 // ── 404 handler ───────────────────────────────────────────────────
 app.use((req, res) => {
